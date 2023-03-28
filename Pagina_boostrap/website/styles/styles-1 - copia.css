@@ -1,0 +1,388 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+  
+:root{
+    --Negro:#000000;
+    --Blanco:#FDFFFD;
+    --Verde-Clarito: #9ACD32;
+    --Verde-Oscuro: #428E15;
+    /*colores complementarios*/
+    --Cafe-claro:#C5956C;
+    --Cafe-oscuro:#96663D;
+}
+@font-face {
+    font-family: 'titulos' ;
+    src: url('./fonts/CAESAR.TTF')   
+}
+@font-face {
+    font-family: 'textos';
+    src: url('./fonts/GOTHIC.TTF')')   
+}
+
+
+/* Inicio del menu  */
+.text-titulos{
+    font-family: 'titulos';
+    font-size: 20px;
+    color: #000000;
+}
+
+.text-textos{
+    font-family: 'textos';
+    font-size: 20px;
+    color: #000000;
+}
+
+.logo{
+    height: 100px;
+}
+
+
+.item{
+    background-color: var(--Verde-Clarito);
+    height: 46px;
+    width: 150px;
+    font-family: "titulos";
+    cursor: pointer;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.item:hover{
+    background-color:transparent;
+    transition: 0.5s;
+    border-bottom-color: #000000;
+    height: 5px;
+}
+
+/* Fin del menu */
+
+
+
+/* SLIDER */
+.imag-1{
+    height: 50rem;
+}
+.color-slider {
+    width: 70%;           /* Ancho de 150 píxeles */
+    height: 150px;
+    opacity: 60%;       /* Alto de 150 píxeles */
+    background: var(--Blanco);        /* Fondo de color rojo */
+   /*  border: 1px solid #000; */ /* Borde color negro y de 1 píxel de grosor */
+  }
+
+/* FIN SLIDER */
+
+
+
+
+/* Inicio del eparador */
+/* .color_separador-1{
+    background:#9ff070;
+} */
+.color_separador-1{
+    background:var(--Verde-Clarito);
+}
+
+.separador{
+    height: 60px;
+
+}
+.title_separador{
+    font-size: 28px;
+}
+
+
+/* Final del separador  */
+
+/* Inicio de la introduccion y proceso de elaboracion */
+
+
+
+
+/* Animacion 1 */
+
+.color-animation-1{
+    background: #8b8b8b67;
+    
+    
+    border-radius: 12px;
+    box-shadow: #000000 0px 0px 13px 0px;
+}
+
+.izquierda {
+    opacity: 0;
+    animation: aparecer 5s ease-in-out forwards;
+}
+  
+.derecha {
+    transform: translateX(100%);
+    animation: deslizar 2s ease-in-out forwards;
+}
+  
+@keyframes aparecer {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 3;
+    }
+}
+  
+@keyframes deslizar {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.historia h2{
+    padding-top: 8rem;
+}
+
+
+.derecha img {
+    width: 100%;
+    height: auto;
+}
+
+/* FIn de animacion 1 */
+
+.text-justify{
+    display: flex;
+    justify-content: center;
+   
+}
+/* Inicio de animacion 2 */
+/* .color-animation{
+    background: #34b83ccc;
+} */
+.color-animation{
+    background:#c3f06a;
+   
+    border-radius: 12px;
+    box-shadow: #000000 0px 0px 13px 0px;
+}
+
+ .contenedor-izquierda-1 img {
+    width: 100%;
+    
+}
+.contenedor-izquierda-1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+} 
+.o-hidden{
+    overflow: hidden;
+}
+  
+@keyframes deslizar-1 {
+    to {
+      transform: translateX(0%);
+    }
+}
+.container {
+  position: relative;
+  overflow: hidden;
+}
+@keyframes slide-in {
+  100% {
+    left: 100%;
+  }
+}
+.animacion-1 img{
+    width: 100%;
+    height: auto;
+}
+.animacion-1 {
+    
+    left: -12;
+    transform: translateX(-100%);
+    animation: deslizar-1 2s ease-in-out forwards;
+}
+/* FIn de animacion 2 */
+
+/* creadores */
+.imagen-editor{
+   height: 19rem;
+}
+.caja-creador{
+    width: 20rem !important;;
+}
+/* .padding-img{padding-top: 20px;} */
+
+
+
+
+/* personajes */
+
+.imagen-descripcion {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .descripcion {
+    display: none;
+    position: absolute;
+    top: -120%;
+    left: -50%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    z-index: 1;
+  }
+  
+  .image-container:hover .descripcion {
+    display: block;
+  }
+  
+
+
+
+
+/* Personajes_principales */
+
+
+/* Fin de los personajes principales */
+@font-face {
+    font-family: 'Archivo Black';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/archivoblack/v17/HTxqL289NzCGg4MzN6KJ7eW6CYyF-w.ttf) format('truetype');
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+  .cards-wrapper {
+    position: relative;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-wrapper {
+    float: left;
+    
+    margin: 0;
+    width: 28%;
+    height: 0;
+    padding: 0 0 28%;
+    perspective: 700px;
+  }
+  .card-object {
+    color: #FFF;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    width: 88%;
+    height: 88%;
+    transform-style: preserve-3d;
+  }
+  .card-object.card-1 .front {
+    background: #ffffff url(../images/Personajes_principales/gaspar_modificado.png) 90% 35%;
+    background-size: 115%;
+  }
+  .card-object.card-1 .back .avatar {
+    background: transparent url(../images/Personajes_principales/gaspar_modificado.png) 40% 20%;
+    background-size: 130% 130%;
+  }
+  .card-object.card-2 .front {
+    background: #ffffff url(../images/Personajes_principales/Perro-fantasma.png) 50% 90% no-repeat;
+    background-size: 105%;
+  }
+  
+  .card-object.card-2 .back .avatar {
+    background: transparent url(../images/Personajes_principales/Perro-fantasma.png) 50% 50% no-repeat;
+    background-size: 140% 140%;
+    height: 62px;
+    width: 50px;
+  }
+  .card-object.card-3 .front {
+    background: #222 url(https://www.dropbox.com/s/l9knvp7vgci3p9c/kira.jpg?raw=1) 80% 100% no-repeat;
+    background-size: 108%;
+  }
+  .card-object.card-3 .back .img-wrapper {
+    background: transparent url(https://www.dropbox.com/s/l9knvp7vgci3p9c/kira.jpg?raw=1) 90% 40% no-repeat;
+    background-size: 115%;
+  }
+  .card-object.card-3 .back .avatar {
+    background: #fff url(https://www.dropbox.com/s/l9knvp7vgci3p9c/kira.jpg?raw=1) 0 50% no-repeat;
+    background-size: 120% 120%;
+  }
+  .card-object.flip-in.card-1,
+  .card-object.flip-in.card-3 {
+    -webkit-animation: flip-2-hor-top-fwd 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+            animation: flip-2-hor-top-fwd 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+  }
+  .card-object.flip-in.card-2 {
+    -webkit-animation: flip-2-hor-bottom-fwd 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+            animation: flip-2-hor-bottom-fwd 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+  }
+  .card-object.flip-out.card-1,
+  .card-object.flip-out.card-3 {
+    animation: flip-2-hor-top-fwd 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) reverse both;
+  }
+  .card-object.flip-out.card-2 {
+    animation: flip-2-hor-bottom-fwd 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) reverse both;
+  }
+  .card-object-hf .back {
+    transform: rotateX(180deg);
+  }
+  .face {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  .face.front {
+    z-index: 20;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .face.front::before {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    content: "";
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.1) 100%) no-repeat;
+    opacity: 0.7;
+    z-index: 20;
+    transition: opacity 0.2s ease;
+  }
+
+/* Fin de todo */
+
+.color_separador-2{
+    background:var(--Cafe-claro);
+    height: 112px;
+}

@@ -1,0 +1,273 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+:root{
+  --Negro:#000000;
+  --Blanco:#FDFFFD;
+  --Verde-Clarito: #9ACD32;
+  --Verde-Oscuro: #428E15;
+  /*colores complementarios*/
+  --Cafe-claro:#C5956C;
+  --Cafe-oscuro:#96663D;
+}
+
+@font-face {
+  font-family: 'titulos-botones' ;
+  src: url('../fonts/CAESAR.TTF')   
+}
+
+@font-face {
+  font-family: 'textos' ;
+  src: url('../fonts/GOTHIC.TTF')   
+}
+
+body{
+  margin: 0 auto;
+  font-family: 'textos';  
+}
+body::-webkit-scrollbar{
+  background: var(--Verde-Clarito);
+}
+body::-webkit-scrollbar-thumb{
+  background: #96663D;
+  border-radius: 13px;
+  height: 2rem;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: var(--Verde-Clarito);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo-artemisa{
+  height: 51px;
+    cursor: pointer;
+    padding-top: 4px;
+}
+
+.boton{
+  background: var(--Verde-Oscuro);
+  font-family: 'titulos-botones';
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 19px;
+  padding: 6px;
+}
+.boton:hover{
+  background: #37cd32c2;
+}
+
+
+
+/* 
+cuello 
+*/
+.img-juego{
+  height: 70px;
+} 
+
+.imagen-juego{
+  display: flex;
+    justify-content: center;
+    padding-top: 71px;
+}
+.guia{
+  display: flex;
+  justify-content: center;
+  
+  padding-top: 20px;
+}
+
+.imagen-logo{
+  width: 62px;
+}
+
+
+.limitante{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 14px;
+}
+
+
+.descripcion h1{
+  font-family: 'titulos-botones';
+  font-size: 22px;
+  margin-bottom: 9px;
+}
+.descripcion p{
+  font-family: 'textos';
+  font-size: 17px;
+}
+
+.objetivo{
+ 
+    gap: 10rem;
+    text-align: right;
+    margin-right: 8rem;
+  
+}
+.objetivo h1{
+  font-family: 'titulos-botones';
+  font-size: 22px;
+  margin-bottom: 9px;
+}
+.objetivo p{
+  font-family: 'textos';
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+/* separador */
+
+
+
+.intro-proceso{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.separador{
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  background: var(--Verde-Clarito);
+  margin-top: 10px;
+}
+.intro-proceso{
+  font-family: 'titulos-botones';
+    font-size: 18px;
+}
+
+
+/* cuerpo */
+
+.proceso-elaboracion{
+  padding-right: 5rem;
+  height: 22rem;
+}
+.intro{
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contenedor p{
+  font-family: 'textos';
+  font-size: 17px;
+  padding-left: 18px;
+  padding-right: 4px;
+}
+
+   /*creadores  */
+.para-la-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 2rem 0 2rem 0 ;
+}
+.fondo-creadores{
+  height: 445px ;
+    width: 100%;
+    background: var(--Verde-Clarito);
+    text-align: center;
+    padding: 2rem;
+}
+.fondo-creadores-oscuro{
+  height: 445px ;
+    width: 100%;
+    background: var(--Cafe-oscuro);
+    text-align: center;
+    padding: 2rem;
+}
+.texto{
+  font-family: 'textos';
+  font-size: 16pt;
+}
+.separador-1{
+  align-items: center;
+  background: var(--Verde-Clarito);
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.intro img{
+  width: 31%;
+  height: 220px;
+  padding-left: 21px;
+}
+.padre-intro img{
+  height: 264px;
+  width: 57%;
+  padding-left: 39px;
+}
+.intro h1{
+  display: flex;
+    justify-content: center;
+    font-family: 'titulos-botones';
+    font-size: 22px;
+    margin-bottom: 9px;
+}
+.intro-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  
+}
+.intro-1 h1{
+  display: flex;
+  justify-content: center;
+  font-family: 'titulos-botones';
+  font-size: 22pt;
+  padding-top: 10px;
+}
+.caja-boton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+.boton-1{
+  height: 36px;
+    width: 197px;
+    background: var(--Verde-Oscuro);
+    font-family: 'titulos-botones';
+    font-size: 22pt;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.boton-1:hover{
+    background: #37cd32c2;
+}
+
+.pie-pagina{
+  background: var(--Cafe-oscuro);
+  width: 100%;
+  height: 56px;
+
+}
+.redes-sociales{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  padding-top: 1rem;
+}
+.pie-pagina img{
+  height: 34px;
+}
+.face{
+  padding-left: 56px;
+}
